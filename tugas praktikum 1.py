@@ -1,0 +1,14 @@
+uang_udin = 2 * 100000
+harga_buku = 25000
+jumlah_buku = 3
+total_harga1 = harga_buku * jumlah_buku
+harga_bolpen = 8000
+jumlah_bolpen = 2
+total_harga2 = harga_bolpen * jumlah_bolpen
+harga_flashdisk = 75000
+sebelum_diskon = total_harga1 + total_harga2 + harga_flashdisk
+diskon = 10 * sebelum_diskon
+setelah_diskon = sebelum_diskon - diskon
+pajak = 11 * setelah_diskon
+total_belanja = setelah_diskon + pajak
+kembalian = uang_udin - total_belanja
