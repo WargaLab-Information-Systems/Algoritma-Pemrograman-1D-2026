@@ -22,7 +22,7 @@ Selamat datang di repositori resmi tugas praktikum. Seluruh dokumentasi, kode su
 
 ---
 
-## 📚 Progress Modul Praktikum
+##  Progress Modul Praktikum
 
 | Modul | Materi | Status | Dokumen |
 | :---: | :--- | :---: | :---: |
