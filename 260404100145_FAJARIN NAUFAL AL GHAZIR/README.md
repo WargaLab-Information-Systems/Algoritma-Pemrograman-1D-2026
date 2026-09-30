@@ -26,6 +26,6 @@ Selamat datang di repositori resmi tugas praktikum. Seluruh dokumentasi, kode su
 
 | Modul | Materi | Status | Dokumen |
 | :---: | :--- | :---: | :---: |
-| **01** | Operasi Aritmatika | 🟢 Selesai | [Lihat Modul 1](./Modul1) |
+| **01** | Operasi Aritmatika | 🟢 Selesai | [Lihat Modul 1](./Modul%201) |
 
 ---
