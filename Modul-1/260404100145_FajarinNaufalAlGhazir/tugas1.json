@@ -1,0 +1,325 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 42,
+      "y": 10,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "hargaBuku = 25000 * 3",
+      "x": 21,
+      "y": 125,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 4,
+      "type": "end",
+      "text": "End",
+      "x": 47,
+      "y": 1313,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 5,
+      "type": "input",
+      "text": "uangBayar = 200000",
+      "x": 479,
+      "y": 239,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 6,
+      "type": "input",
+      "text": "diskon = 10",
+      "x": 260,
+      "y": 241,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "input",
+      "text": "pajak = 11",
+      "x": 20,
+      "y": 241,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 8,
+      "type": "input",
+      "text": "hargaPulpen = 8000 * 2",
+      "x": 252,
+      "y": 124,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 9,
+      "type": "input",
+      "text": "hargaFlashdisk = 75000",
+      "x": 479,
+      "y": 125,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 10,
+      "type": "process",
+      "text": "sebelumDiskon = hargaBuku + hargaPulpen + hargaFlashdisk",
+      "x": 10,
+      "y": 437,
+      "w": 210,
+      "h": 96
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "setelahDiskon = sebelumDiskon - diskon",
+      "x": 501,
+      "y": 435,
+      "w": 210,
+      "h": 96
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "hargaPajak = setelahDiskon * pajak / 100",
+      "x": 503,
+      "y": 571,
+      "w": 210,
+      "h": 96
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "diskon = sebelumDiskon * (diskon / 100)",
+      "x": 257,
+      "y": 434,
+      "w": 210,
+      "h": 96
+    },
+    {
+      "id": 14,
+      "type": "process",
+      "text": "total = setelahDiskon + hargaPajak",
+      "x": 259,
+      "y": 570,
+      "w": 210,
+      "h": 96
+    },
+    {
+      "id": 15,
+      "type": "process",
+      "text": "kembalian = uangBayar - total",
+      "x": 10,
+      "y": 569,
+      "w": 210,
+      "h": 96
+    },
+    {
+      "id": 16,
+      "type": "output",
+      "text": "\"a) Total harga buku = Rp\" + hargaBuku",
+      "x": 10,
+      "y": 810,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 17,
+      "type": "output",
+      "text": "\"g) Besarnya pajak 11% = Rp\" + hargaPajak",
+      "x": 238,
+      "y": 969,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 18,
+      "type": "output",
+      "text": "\"c) Total harga flashdisk = Rp\" + hargaFlashdisk",
+      "x": 501,
+      "y": 813,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 19,
+      "type": "output",
+      "text": "\"e) Besarnya diskon 10% = Rp\" + diskon",
+      "x": 744,
+      "y": 969,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 20,
+      "type": "output",
+      "text": "\"b) Total harga pulpen = Rp\" + hargaPulpen",
+      "x": 252,
+      "y": 809,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 21,
+      "type": "output",
+      "text": "\"d) Total harga barang sebelum diskon = Rp\" + sebelumDiskon",
+      "x": 756,
+      "y": 815,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 22,
+      "type": "output",
+      "text": "\"h) Total poembayaran setelah pajak = Rp\" + total",
+      "x": 10,
+      "y": 970,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 23,
+      "type": "output",
+      "text": "\"f) Harga barang setelah diskon = Rp\" + setelahDiskon",
+      "x": 492,
+      "y": 979,
+      "w": 220,
+      "h": 100
+    },
+    {
+      "id": 24,
+      "type": "output",
+      "text": "\"i) Uang kembalian yang diterima udin = Rp\" + kembalian",
+      "x": 10,
+      "y": 1125,
+      "w": 220,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 20,
+      "branch": null
+    },
+    {
+      "from": 20,
+      "to": 18,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 21,
+      "branch": null
+    },
+    {
+      "from": 21,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 19,
+      "to": 23,
+      "branch": null
+    },
+    {
+      "from": 23,
+      "to": 17,
+      "branch": null
+    },
+    {
+      "from": 17,
+      "to": 22,
+      "branch": null
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "branch": null
+    },
+    {
+      "from": 24,
+      "to": 4,
+      "branch": null
+    }
+  ],
+  "nextId": 25
+}
