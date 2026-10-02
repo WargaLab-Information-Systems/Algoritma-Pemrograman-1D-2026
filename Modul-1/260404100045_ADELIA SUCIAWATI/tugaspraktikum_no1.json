@@ -1,0 +1,283 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 63,
+      "y": 12,
+      "w": 135,
+      "h": 45
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "tb = 3 * 25000",
+      "x": 461,
+      "y": 73,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 4,
+      "type": "process",
+      "text": "tp = 2 * 8000",
+      "x": 618,
+      "y": 71,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "tf = 1 * 75000",
+      "x": 776,
+      "y": 70,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 9,
+      "type": "output",
+      "text": "tb, tp, tf",
+      "x": 931,
+      "y": 68,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "tsd = tb + tp + tf",
+      "x": 844,
+      "y": 165,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 14,
+      "type": "output",
+      "text": "tsd",
+      "x": 1018,
+      "y": 170,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 16,
+      "type": "process",
+      "text": "d = (10/100) * tsd",
+      "x": 957,
+      "y": 254,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 17,
+      "type": "output",
+      "text": "d",
+      "x": 721,
+      "y": 296,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 18,
+      "type": "process",
+      "text": "sd = tsd - d",
+      "x": 658,
+      "y": 390,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 19,
+      "type": "output",
+      "text": "sd",
+      "x": 814,
+      "y": 387,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 20,
+      "type": "process",
+      "text": "p = (11/100) * sd",
+      "x": 753,
+      "y": 464,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 22,
+      "type": "output",
+      "text": "p",
+      "x": 909,
+      "y": 463,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 23,
+      "type": "process",
+      "text": "t_b = sd + p",
+      "x": 835,
+      "y": 538,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 24,
+      "type": "output",
+      "text": "t_b",
+      "x": 991,
+      "y": 536,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 25,
+      "type": "process",
+      "text": "k = u - t_b",
+      "x": 920,
+      "y": 612,
+      "w": 135,
+      "h": 50
+    },
+    {
+      "id": 26,
+      "type": "output",
+      "text": "k",
+      "x": 1074,
+      "y": 609,
+      "w": 130,
+      "h": 55
+    },
+    {
+      "id": 27,
+      "type": "end",
+      "text": "End",
+      "x": 1072,
+      "y": 701,
+      "w": 135,
+      "h": 45
+    },
+    {
+      "id": 28,
+      "type": "input",
+      "text": "u = 100000 * 2",
+      "x": 48,
+      "y": 68,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 30,
+      "type": "output",
+      "text": "u",
+      "x": 254,
+      "y": 66,
+      "w": 190,
+      "h": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "branch": null
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "branch": null
+    },
+    {
+      "from": 20,
+      "to": 22,
+      "branch": null
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "branch": null
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "branch": null
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "branch": null
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "branch": null
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "branch": null
+    },
+    {
+      "from": 1,
+      "to": 28,
+      "branch": null
+    },
+    {
+      "from": 28,
+      "to": 30,
+      "branch": null
+    },
+    {
+      "from": 30,
+      "to": 3,
+      "branch": null
+    }
+  ],
+  "nextId": 31
+}
