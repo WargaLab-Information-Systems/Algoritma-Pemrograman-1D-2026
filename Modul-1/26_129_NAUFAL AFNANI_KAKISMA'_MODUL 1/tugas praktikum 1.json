@@ -5,125 +5,125 @@
       "id": 1,
       "type": "start",
       "text": "Start",
-      "x": 410,
-      "y": 31,
+      "x": 430,
+      "y": 55,
       "w": 150,
       "h": 58
     },
     {
       "id": 2,
       "type": "input",
-      "text": "uang_udin = 100000 ; harga_buku = 25000 ; jumlah_buku = 3",
-      "x": 378,
-      "y": 134,
+      "text": "buku =  3",
+      "x": 391,
+      "y": 140,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "input",
+      "text": "bolpen = 2",
+      "x": 383,
+      "y": 223,
       "w": 190,
       "h": 70
     },
     {
       "id": 4,
-      "type": "process",
-      "text": "total_buku = harga_buku * jumlah_buku",
-      "x": 374,
-      "y": 409,
-      "w": 180,
-      "h": 66
-    },
-    {
-      "id": 5,
       "type": "input",
-      "text": "harga_bolpen = 8000 ; jumlah_bolpen = 2",
-      "x": 371,
-      "y": 224,
+      "text": "flashdisk = 1",
+      "x": 369,
+      "y": 306,
       "w": 190,
       "h": 70
     },
     {
       "id": 6,
       "type": "input",
-      "text": "harga_flashdisk = 75000",
-      "x": 361,
-      "y": 318,
+      "text": "bayar = 200000",
+      "x": 369,
+      "y": 391,
       "w": 190,
       "h": 70
     },
     {
       "id": 7,
       "type": "process",
-      "text": "total_bolpen = harga_bolpen * jumlah_bolpen",
-      "x": 361,
-      "y": 514,
+      "text": "total_buku = buku * 25000",
+      "x": 365,
+      "y": 484,
       "w": 180,
       "h": 66
     },
     {
       "id": 8,
       "type": "process",
-      "text": "sebelum_diskon = total_buku + total_bolpen + harga_flashdisk",
-      "x": 363,
-      "y": 603,
+      "text": "total_bulpen = bolpen * 8000",
+      "x": 365,
+      "y": 575,
       "w": 180,
       "h": 66
     },
     {
       "id": 9,
       "type": "process",
-      "text": "diskon = 10 * sebelum_diskon",
-      "x": 368,
-      "y": 704,
+      "text": "total_flashdisk = flashdisk * 75000",
+      "x": 366,
+      "y": 664,
       "w": 180,
       "h": 66
     },
     {
       "id": 10,
       "type": "process",
-      "text": "setelah_diskon = sebelum_diskon - diskon",
-      "x": 371,
-      "y": 806,
+      "text": "total = total_buku + total_bulpen + total_flashdisk",
+      "x": 367,
+      "y": 752,
       "w": 180,
       "h": 66
     },
     {
       "id": 11,
       "type": "process",
-      "text": "pajak = 11 * setelah_diskon",
-      "x": 374,
-      "y": 896,
+      "text": "diskon = total * 0.10",
+      "x": 367,
+      "y": 839,
       "w": 180,
       "h": 66
     },
     {
       "id": 12,
       "type": "process",
-      "text": "total_belanja = setelah_diskon + pajak",
-      "x": 373,
-      "y": 987,
+      "text": "setelah_diskon = total - diskon",
+      "x": 367,
+      "y": 924,
       "w": 180,
       "h": 66
     },
     {
       "id": 13,
-      "type": "output",
-      "text": "total_belanja ; kembalian",
+      "type": "process",
+      "text": "pajak = setelah_diskon * 0.11",
       "x": 368,
-      "y": 1278,
-      "w": 190,
-      "h": 70
+      "y": 1005,
+      "w": 180,
+      "h": 66
     },
     {
       "id": 14,
       "type": "process",
-      "text": "total_belanja = setelah_diskon + pajak",
-      "x": 376,
-      "y": 1082,
+      "text": "total_bayar = setelah_diskon + pajak",
+      "x": 366,
+      "y": 1093,
       "w": 180,
       "h": 66
     },
     {
       "id": 15,
       "type": "process",
-      "text": "kembalian = uang_udin - total_belanja",
-      "x": 378,
-      "y": 1169,
+      "text": "kembalian = bayar - total_bayar",
+      "x": 367,
+      "y": 1177,
       "w": 180,
       "h": 66
     },
@@ -131,10 +131,19 @@
       "id": 16,
       "type": "end",
       "text": "End",
-      "x": 388,
-      "y": 1381,
+      "x": 373,
+      "y": 1352,
       "w": 150,
       "h": 58
+    },
+    {
+      "id": 17,
+      "type": "output",
+      "text": "kembalian",
+      "x": 356,
+      "y": 1262,
+      "w": 190,
+      "h": 70
     }
   ],
   "edges": [
@@ -145,21 +154,21 @@
     },
     {
       "from": 2,
-      "to": 5,
+      "to": 3,
       "branch": null
     },
     {
-      "from": 5,
-      "to": 6,
-      "branch": null
-    },
-    {
-      "from": 6,
+      "from": 3,
       "to": 4,
       "branch": null
     },
     {
       "from": 4,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
       "to": 7,
       "branch": null
     },
@@ -190,6 +199,11 @@
     },
     {
       "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
       "to": 14,
       "branch": null
     },
@@ -200,14 +214,14 @@
     },
     {
       "from": 15,
-      "to": 13,
+      "to": 17,
       "branch": null
     },
     {
-      "from": 13,
+      "from": 17,
       "to": 16,
       "branch": null
     }
   ],
-  "nextId": 17
+  "nextId": 18
 }
