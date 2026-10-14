@@ -1,0 +1,70 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 430,
+      "y": 55,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "angka (1-5)",
+      "x": 396,
+      "y": 154,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "decision",
+      "text": "angka < 1",
+      "x": 430,
+      "y": 275,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 4,
+      "type": "decision",
+      "text": "angka > 5",
+      "x": 435,
+      "y": 475,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 6,
+      "type": "output",
+      "text": "diluar batas 1-5",
+      "x": 632,
+      "y": 385,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "output",
+      "text": "dalam batas",
+      "x": 405,
+      "y": 653,
+      "w": 175,
+      "h": 55
+    },
+    {
+      "id": 8,
+      "type": "end",
+      "text": "End",
+      "x": 430,
+      "y": 760,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [],
+  "nextId": 9
+}
