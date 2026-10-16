@@ -16,7 +16,7 @@ while True:
     try:
         jarak = int(input("Masukkan jarak (km), 0 untuk selesai: "))
     except ValueError:
-        print("Input harus bilangan angka bulat.")
+        print("Input tidak valid, harus berupa angka bulat.")
         continue
 
     if jarak == 0:
