@@ -1,0 +1,171 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 124,
+      "y": 12,
+      "w": 100,
+      "h": 45
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "total_buku=3*25000",
+      "x": 308,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 17,
+      "type": "end",
+      "text": "End",
+      "x": 133,
+      "y": 482,
+      "w": 100,
+      "h": 45
+    },
+    {
+      "id": 22,
+      "type": "input",
+      "text": "total_pulpen=2*8000",
+      "x": 615,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 23,
+      "type": "input",
+      "text": "total_flashdisk=1*75000",
+      "x": 636,
+      "y": 115,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 25,
+      "type": "process",
+      "text": "total_belanja=total_buku+total_pulpen+total_flashdisk",
+      "x": 371,
+      "y": 109,
+      "w": 195,
+      "h": 81
+    },
+    {
+      "id": 26,
+      "type": "process",
+      "text": "diskon=0.1*total_belanja",
+      "x": 99,
+      "y": 114,
+      "w": 195,
+      "h": 81
+    },
+    {
+      "id": 27,
+      "type": "process",
+      "text": "harga_setelah_diskon=total_belanja-diskon",
+      "x": 98,
+      "y": 255,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 28,
+      "type": "process",
+      "text": "PPN=0.11*harga_setelah_diskon",
+      "x": 351,
+      "y": 238,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 29,
+      "type": "process",
+      "text": "total_membayar=harga_setelah_diskon+PPN",
+      "x": 633,
+      "y": 247,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 33,
+      "type": "input",
+      "text": "uang_dibayar=200000",
+      "x": 624,
+      "y": 379,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 34,
+      "type": "input",
+      "text": "kembalian=uang_dibayar-total_membayar",
+      "x": 342,
+      "y": 389,
+      "w": 190,
+      "h": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 22,
+      "branch": null
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "branch": null
+    },
+    {
+      "from": 23,
+      "to": 25,
+      "branch": null
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "branch": null
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "branch": null
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "branch": null
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "branch": null
+    },
+    {
+      "from": 29,
+      "to": 33,
+      "branch": null
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "branch": null
+    },
+    {
+      "from": 34,
+      "to": 17,
+      "branch": null
+    }
+  ],
+  "nextId": 35
+}
