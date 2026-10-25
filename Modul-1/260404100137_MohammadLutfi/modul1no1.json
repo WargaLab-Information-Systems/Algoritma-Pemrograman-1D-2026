@@ -1,0 +1,171 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 617,
+      "y": 10,
+      "w": 120,
+      "h": 45
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "buku =3*25000",
+      "x": 759,
+      "y": 97,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 4,
+      "type": "process",
+      "text": "pulpen=2*8000",
+      "x": 443,
+      "y": 146,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "flashdisk=75000",
+      "x": 731,
+      "y": 263,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 6,
+      "type": "process",
+      "text": "total_barang=buku+pulpen+flashdisk",
+      "x": 426,
+      "y": 346,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "diskon=total_barang*0.10",
+      "x": 495,
+      "y": 447,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "total_harga=total_barang -diskon",
+      "x": 518,
+      "y": 534,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "pajak=total_harga*0.11",
+      "x": 550,
+      "y": 624,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "total_pajak =total_harga + pajak",
+      "x": 522,
+      "y": 708,
+      "w": 165,
+      "h": 51
+    },
+    {
+      "id": 14,
+      "type": "process",
+      "text": "uang_udin = 100000*2",
+      "x": 673,
+      "y": 768,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 15,
+      "type": "process",
+      "text": "total_kembalian =uang_udin-total_pajak",
+      "x": 461,
+      "y": 827,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 16,
+      "type": "end",
+      "text": "End",
+      "x": 561,
+      "y": 879,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 12,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": null
+    }
+  ],
+  "nextId": 17
+}
