@@ -1,0 +1,316 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 2,
+      "type": "input",
+      "text": "buku = 25000",
+      "x": 25,
+      "y": 105,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "input",
+      "text": "pulpen = 8000",
+      "x": 379,
+      "y": 105,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 4,
+      "type": "input",
+      "text": "flasdisk = 75000",
+      "x": 736,
+      "y": 106,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 6,
+      "type": "input",
+      "text": "semester = \"akhir\"",
+      "x": 1091,
+      "y": 109,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 8,
+      "type": "input",
+      "text": "banyak_B = 3",
+      "x": 205,
+      "y": 104,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 9,
+      "type": "input",
+      "text": "banyak_P = 2",
+      "x": 559,
+      "y": 106,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 10,
+      "type": "input",
+      "text": "banyak_F = 1",
+      "x": 909,
+      "y": 109,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "total_awal = uang - ( buku * banyak_B) - (pulpen * banyak_P) - (flasdisk * banyak_F)",
+      "x": 1065,
+      "y": 213,
+      "w": 225,
+      "h": 111
+    },
+    {
+      "id": 14,
+      "type": "start",
+      "text": "Start",
+      "x": 310,
+      "y": 16,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 15,
+      "type": "input",
+      "text": "uang = 200000",
+      "x": 57,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 18,
+      "type": "process",
+      "text": "diskon = total_awal * 10/100",
+      "x": 656,
+      "y": 433,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 19,
+      "type": "output",
+      "text": "\"anda tidak mendapatkan diskon\"",
+      "x": 987,
+      "y": 433,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 20,
+      "type": "process",
+      "text": "pajak = diskon * 11/100",
+      "x": 647,
+      "y": 560,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 21,
+      "type": "process",
+      "text": "bayar = diskon + pajak",
+      "x": 649,
+      "y": 672,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 24,
+      "type": "process",
+      "text": "bayar = total_awal + pajak",
+      "x": 1007,
+      "y": 668,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 25,
+      "type": "process",
+      "text": "pajak = total_awal * 11/100",
+      "x": 998,
+      "y": 554,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 28,
+      "type": "output",
+      "text": "\"total uang \"; total_awal",
+      "x": 850,
+      "y": 233,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 29,
+      "type": "decision",
+      "text": "semester = \"awal\"",
+      "x": 864,
+      "y": 340,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 30,
+      "type": "output",
+      "text": "\"yang harus di bayar\" ; bayar",
+      "x": 825,
+      "y": 769,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 31,
+      "type": "output",
+      "text": "\"kembalian yg di terima\"; kembali",
+      "x": 830,
+      "y": 1012,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 32,
+      "type": "process",
+      "text": "kembali = uang - bayar",
+      "x": 832,
+      "y": 889,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 36,
+      "type": "end",
+      "text": "End",
+      "x": 848,
+      "y": 1135,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "branch": null
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "branch": null
+    },
+    {
+      "from": 19,
+      "to": 25,
+      "branch": null
+    },
+    {
+      "from": 25,
+      "to": 24,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 28,
+      "branch": null
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "branch": null
+    },
+    {
+      "from": 29,
+      "to": 18,
+      "branch": "true"
+    },
+    {
+      "from": 29,
+      "to": 19,
+      "branch": "false"
+    },
+    {
+      "from": 21,
+      "to": 30,
+      "branch": null
+    },
+    {
+      "from": 30,
+      "to": 32,
+      "branch": null
+    },
+    {
+      "from": 32,
+      "to": 31,
+      "branch": null
+    },
+    {
+      "from": 24,
+      "to": 30,
+      "branch": null
+    },
+    {
+      "from": 31,
+      "to": 36,
+      "branch": null
+    }
+  ],
+  "nextId": 37
+}
