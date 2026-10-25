@@ -1,0 +1,213 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 500,
+      "y": 45,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "uang = 200000",
+      "x": 500,
+      "y": 195,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "TB = 3 *25000",
+      "x": 500,
+      "y": 345,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 4,
+      "type": "output",
+      "text": "TB = 75000",
+      "x": 500,
+      "y": 495,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "TP = 2*8000",
+      "x": 950,
+      "y": 80,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 6,
+      "type": "output",
+      "text": "TP = 16000",
+      "x": 950,
+      "y": 190,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "process",
+      "text": "TF = 1 * 75000",
+      "x": 950,
+      "y": 300,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 8,
+      "type": "output",
+      "text": "TF = 75000",
+      "x": 950,
+      "y": 410,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "T = TB + TP + TF",
+      "x": 950,
+      "y": 520,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "D = 0.1 * T",
+      "x": 950,
+      "y": 740,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "S = T - D",
+      "x": 950,
+      "y": 960,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 15,
+      "type": "process",
+      "text": "P = 0.11 * S",
+      "x": 950,
+      "y": 1180,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 17,
+      "type": "process",
+      "text": "B = S + P",
+      "x": 950,
+      "y": 1400,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 19,
+      "type": "process",
+      "text": "K = uang - B",
+      "x": 950,
+      "y": 1620,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 21,
+      "type": "end",
+      "text": "End",
+      "x": 950,
+      "y": 1840,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "branch": null
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "branch": null
+    }
+  ],
+  "nextId": 22
+}
