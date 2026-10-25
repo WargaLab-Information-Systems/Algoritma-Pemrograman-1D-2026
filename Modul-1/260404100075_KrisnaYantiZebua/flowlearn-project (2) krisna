@@ -1,0 +1,255 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 10,
+      "y": 10,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "uang_udin=200000",
+      "x": 187,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "input",
+      "text": "jumlah_buku",
+      "x": 406,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 4,
+      "type": "input",
+      "text": "harga_buku",
+      "x": 606,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 5,
+      "type": "input",
+      "text": "jumlah_bulpen",
+      "x": 803,
+      "y": 16,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 6,
+      "type": "input",
+      "text": "harga_bulpen",
+      "x": 1009,
+      "y": 20,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 7,
+      "type": "input",
+      "text": "jumlah_flashsdisk",
+      "x": 997,
+      "y": 126,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 8,
+      "type": "input",
+      "text": "harga_flashsdisk",
+      "x": 796,
+      "y": 130,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "total_buku=jumlah_buku*harga_buku",
+      "x": 602,
+      "y": 129,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 10,
+      "type": "process",
+      "text": "total_bulpen=jumlah_bulpen*harga_bulpen",
+      "x": 394,
+      "y": 129,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "total_flashsdisk=jumlah_flashsdisk*harga_flashsdisk",
+      "x": 187,
+      "y": 134,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "total_awal=total_buku+total_bulpen+total_flashsdisk",
+      "x": 186,
+      "y": 243,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "diskon=total_awal*0.10",
+      "x": 399,
+      "y": 245,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 14,
+      "type": "process",
+      "text": "setelah_diskon=total_awal-diskon",
+      "x": 615,
+      "y": 249,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 15,
+      "type": "process",
+      "text": "PPN=setelah_diskon*0.11",
+      "x": 828,
+      "y": 250,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 16,
+      "type": "process",
+      "text": "total_bayar=setelah_diskon+PPN",
+      "x": 1028,
+      "y": 253,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 18,
+      "type": "input",
+      "text": "kembalian=uang_udin-total_bayar",
+      "x": 1028,
+      "y": 348,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 19,
+      "type": "end",
+      "text": "End",
+      "x": 825,
+      "y": 358,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "branch": null
+    }
+  ],
+  "nextId": 20
+}
