@@ -10,7 +10,7 @@ nilai_terendah = 100
 nama_tertinggi = ""
 nama_terendah = ""
 
-for i in range(1, 11):
+for i in range(1, 3):
     print("\nMahasiswa ke-", i)
 
     nama = input("Nama mahasiswa: ")
@@ -20,7 +20,7 @@ for i in range(1, 11):
 
     nilai_akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40
 
-    if nilai_akhir >= 85:
+    if nilai_akhir == 90:
         kategori = "A"
         jumlah_A += 1
     elif nilai_akhir >= 75:
@@ -45,19 +45,13 @@ for i in range(1, 11):
 
     total_nilai_akhir += nilai_akhir
 
-    if i == 1:
+    if nilai_akhir > nilai_tertinggi:
         nilai_tertinggi = nilai_akhir
-        nilai_terendah = nilai_akhir
         nama_tertinggi = nama
-        nama_terendah = nama
-    else:
-        if nilai_akhir > nilai_tertinggi:
-            nilai_tertinggi = nilai_akhir
-            nama_tertinggi = nama
 
-        if nilai_akhir < nilai_terendah:
-            nilai_terendah = nilai_akhir
-            nama_terendah = nama
+    if nilai_akhir < nilai_terendah:
+        nilai_terendah = nilai_akhir
+        nama_terendah = nama
 
 print("\n=== REKAP NILAI KELAS ===")
 print("Jumlah kategori A:", jumlah_A)
