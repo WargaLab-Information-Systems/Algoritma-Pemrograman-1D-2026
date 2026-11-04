@@ -1,0 +1,213 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 29,
+      "y": 23,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "a = 3 * 25000 = 75.000",
+      "x": 199,
+      "y": 118,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 4,
+      "type": "process",
+      "text": "b = 2 * 8000 = 16000",
+      "x": 425,
+      "y": 118,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 5,
+      "type": "process",
+      "text": "c = 1 * 75000 = 75000",
+      "x": 629,
+      "y": 119,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 6,
+      "type": "process",
+      "text": "total = a + b + c",
+      "x": 630,
+      "y": 217,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 7,
+      "type": "process",
+      "text": "d = total * 10 / 100",
+      "x": 427,
+      "y": 221,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "hsd = total -  d",
+      "x": 218,
+      "y": 221,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 9,
+      "type": "process",
+      "text": "p = hsd * 11 / 100",
+      "x": 13,
+      "y": 220,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 10,
+      "type": "process",
+      "text": "tb = hsd + p",
+      "x": 15,
+      "y": 322,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "uk = 200000 - tb",
+      "x": 221,
+      "y": 325,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 12,
+      "type": "output",
+      "text": "tb = 166000, d = 16600, hsd = 149400, p = 16434, tb = 165834, uk = 34166",
+      "x": 422,
+      "y": 301,
+      "w": 235,
+      "h": 115
+    },
+    {
+      "id": 13,
+      "type": "end",
+      "text": "End",
+      "x": 665,
+      "y": 328,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 14,
+      "type": "input",
+      "text": "buku",
+      "x": 204,
+      "y": 12,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 15,
+      "type": "input",
+      "text": "flasdisk",
+      "x": 610,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 16,
+      "type": "input",
+      "text": "pulpen",
+      "x": 408,
+      "y": 10,
+      "w": 190,
+      "h": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 1,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "branch": null
+    },
+    {
+      "from": 16,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 3,
+      "branch": null
+    }
+  ],
+  "nextId": 17
+}
