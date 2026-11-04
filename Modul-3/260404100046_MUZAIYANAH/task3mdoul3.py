@@ -19,9 +19,9 @@ for i in range(1, 11):
     totalNilaiAkhir += nilaiAkhir
 
 
-    if nilaiAkhir >= 85:
+    if nilaiAkhir == 90:
         grade = "A"
-        gradeA += 1 
+        gradeA += 1
     elif nilaiAkhir >= 75:
         grade = "B"
         gradeB += 1
@@ -58,7 +58,7 @@ print("Grade A:", gradeA)
 print("Grade B:", gradeB)
 print("Grade C:", gradeC)
 print("Grade D:", gradeD)
-print("Grade E:", gradeE)
+print("Grade E:", gradeE) 
 
 print("Nilai akhir tertinggi: ", nilaiTertinggi)
 print("Nama nilai akhir tertinggi: ", namaTertinggi)

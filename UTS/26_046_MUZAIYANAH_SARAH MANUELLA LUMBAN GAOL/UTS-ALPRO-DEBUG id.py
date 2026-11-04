@@ -1,7 +1,9 @@
 hitung = True
 total_pendapatan = 0
 jumlah_barang = 0 #yaitu menambahkan variabel baru (yg ini) untuk dipanggil pada line ke 7
-berat = 0
+berat = 0 ###variabel baru
+kategori = 0 ###variabel baru
+
 
 print("Selamat Datang di Penghitung Biaya Pengiriman Lanjutan")
 while hitung:
@@ -23,7 +25,7 @@ while hitung:
                 biaya = biaya + 15000
             biaya = 0                     
         else:
-            jarak = input("Masukkan jarak (km): ")  
+            jarak : input("Masukkan jarak (km): ")  #Yaitu harus menggunakan (:) karena awalnya memakai (=)
             if jarak > 100:
                 biaya = 15000
             if jarak > 20:              

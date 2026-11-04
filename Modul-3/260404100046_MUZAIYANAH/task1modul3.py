@@ -8,7 +8,7 @@ while True:
 
     if jarak == 0:
         break
-    elif jarak < 0:
+    elif jarak < 0: 
         continue
 
     jumlahPenumpang += 1

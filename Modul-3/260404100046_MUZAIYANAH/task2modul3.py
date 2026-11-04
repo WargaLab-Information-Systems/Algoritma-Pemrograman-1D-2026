@@ -1,9 +1,9 @@
-n = int(input("Masukkan tinggi setengah menara (2 - 15): "))
+n = 0
 
-if n < 2 or n > 15:
+while n < 2 or n > 15:
+    n = int(input("Masukkan tinggi setengah menara (2 - 15): "))
     print("Tinggi setengah menara tidak valid, harus diantara 2 hingga 15!")
-    exit()    
-    
+
 for baris in range(1, n + 1):
     spasi = (n - baris) * 2
     hasil = ""

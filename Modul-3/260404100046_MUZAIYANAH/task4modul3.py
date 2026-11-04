@@ -4,7 +4,7 @@ for i in range(1, 11):
     nama = input("Masukkan Nama: ")
     ipk = float(input("Masukkan IPK: "))
     penghasilan = int(input("Masukkan penghasilan orang tua perbulan: "))
-    
+                                   
     if ipk < 3.0:
         print(nama, "tidak memenuhi syarat.")
         continue
