@@ -1,0 +1,336 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 500,
+      "y": 45,
+      "w": 110,
+      "h": 45
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "kode",
+      "x": 486,
+      "y": 159,
+      "w": 140,
+      "h": 55
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "d1 = Math.floor(kode / 100); d2 = Math.floor(kode / 10) % 10",
+      "x": 464,
+      "y": 288,
+      "w": 180,
+      "h": 110
+    },
+    {
+      "id": 4,
+      "type": "process",
+      "text": "d3 = kode % 10; nilai = d1 * d3",
+      "x": 467,
+      "y": 490,
+      "w": 180,
+      "h": 64
+    },
+    {
+      "id": 5,
+      "type": "output",
+      "text": "\"Digit pertama:\", d1, \"Digit kedua:\", d2, \"Digit ketiga:\", d3; \"Nilai pelacak awal:\", nilai",
+      "x": 462,
+      "y": 620,
+      "w": 190,
+      "h": 133
+    },
+    {
+      "id": 6,
+      "type": "decision",
+      "text": "d2 % 2 != 0",
+      "x": 492,
+      "y": 831,
+      "w": 130,
+      "h": 130
+    },
+    {
+      "id": 7,
+      "type": "process",
+      "text": "nilai = nilai + 25",
+      "x": 170,
+      "y": 871,
+      "w": 180,
+      "h": 50
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "nilai = nilai - d2",
+      "x": 762,
+      "y": 872,
+      "w": 180,
+      "h": 50
+    },
+    {
+      "id": 9,
+      "type": "output",
+      "text": "\"Nilai pelacak tahap 1:\", nilai",
+      "x": 449,
+      "y": 994,
+      "w": 190,
+      "h": 87
+    },
+    {
+      "id": 10,
+      "type": "decision",
+      "text": "nilai % 3 == 0",
+      "x": 1034,
+      "y": 1083,
+      "w": 130,
+      "h": 130
+    },
+    {
+      "id": 11,
+      "type": "process",
+      "text": "nilai = Math.floor(nilai / 3)",
+      "x": 351,
+      "y": 1113,
+      "w": 180,
+      "h": 64
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "nilai = nilai * 2",
+      "x": 1291,
+      "y": 1217,
+      "w": 180,
+      "h": 50
+    },
+    {
+      "id": 13,
+      "type": "output",
+      "text": "\"Nilai akhir:\", nilai",
+      "x": 945,
+      "y": 1310,
+      "w": 190,
+      "h": 55
+    },
+    {
+      "id": 14,
+      "type": "decision",
+      "text": "nilai > 50",
+      "x": 975,
+      "y": 1443,
+      "w": 130,
+      "h": 130
+    },
+    {
+      "id": 15,
+      "type": "decision",
+      "text": "nilai > 20",
+      "x": 714,
+      "y": 1445,
+      "w": 130,
+      "h": 130
+    },
+    {
+      "id": 16,
+      "type": "output",
+      "text": "\"Status Password: Kategori A\"",
+      "x": 1180,
+      "y": 1563,
+      "w": 190,
+      "h": 64
+    },
+    {
+      "id": 17,
+      "type": "output",
+      "text": "\"Status Password: Password Ditolak\"",
+      "x": 100,
+      "y": 1846,
+      "w": 190,
+      "h": 64
+    },
+    {
+      "id": 18,
+      "type": "output",
+      "text": "\"Status Password: Kategori B\"",
+      "x": 684,
+      "y": 1650,
+      "w": 190,
+      "h": 64
+    },
+    {
+      "id": 19,
+      "type": "decision",
+      "text": "nilai % 2 == 0",
+      "x": 979,
+      "y": 1705,
+      "w": 130,
+      "h": 130
+    },
+    {
+      "id": 20,
+      "type": "output",
+      "text": "\"Siklus Genap\"",
+      "x": 636,
+      "y": 1741,
+      "w": 190,
+      "h": 55
+    },
+    {
+      "id": 21,
+      "type": "output",
+      "text": "\"Siklus Ganjil\"",
+      "x": 950,
+      "y": 1907,
+      "w": 190,
+      "h": 55
+    },
+    {
+      "id": 22,
+      "type": "end",
+      "text": "End",
+      "x": 685,
+      "y": 1911,
+      "w": 110,
+      "h": 45
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "branch": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": "true"
+    },
+    {
+      "from": 6,
+      "to": 8,
+      "branch": "false"
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "branch": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "branch": "true"
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "branch": "false"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "branch": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "branch": "true"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": "false"
+    },
+    {
+      "from": 15,
+      "to": 18,
+      "branch": "true"
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "branch": "false"
+    },
+    {
+      "from": 16,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "branch": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "branch": "true"
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "branch": "false"
+    },
+    {
+      "from": 20,
+      "to": 22,
+      "branch": null
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "branch": null
+    }
+  ],
+  "nextId": 23
+}
